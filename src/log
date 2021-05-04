@@ -1,0 +1,15 @@
+Friday, 23 April, 2021 01:14:11 AM 
+    The server currently supports the basic functionalities of a traditional web server:
+    1. It can fetch files like .html, .js and .css and returns the appropriate content type headers based
+    on the file suffix.
+    2. It truncates paths that use two adjacent periods (../../../) to prevent unauthorized directory
+    traversal.
+    3. It implements persistent connections according to the HTTP/1.1 protocol.
+    4. It has multiple client support, i.e. multiple clients can connect to it simultaneously.
+    5. It uses threads instead of forking new processes to avoid the overhead of process context switching.
+    
+    TODO:
+    1. Add support for HTML5 Fallback
+    2. Implement HTTP range requests to enable streaming
+    3. Add support for single user authentication
+
